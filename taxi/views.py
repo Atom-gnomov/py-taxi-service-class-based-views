@@ -12,7 +12,6 @@ def index(request):
         "num_manufacturers": Manufacturer.objects.count(),
     }
 
-
     return render(request, "taxi/index.html", context=context)
 
 
